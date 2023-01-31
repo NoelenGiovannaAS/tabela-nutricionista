@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Tabela de Nutrição</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/flex.css">
+
+    </head>
+    <body>
+        <!--<header>
+                <h2 id="text-header">Tabela Nutrição</h2>
+        </header>-->
+        <nav>
+            <ul class="menu">
+                <li class="menu__item">
+                   <!-- <h1 class="menu__titulo"></h1>-->
+                   <img src="img/logo-branco-maior.png">
+                </li>
+                <li class="menu__item"><a href="#" class="">Programação</a></li>
+                <li class="menu__item"> <a href="#">Categorias</a></li>
+                <li class="menu__item"><a href="#">Seu local</a></li>
+
+                <li class="menu__item menu__pesquisar">
+                    <label class="menu__label" for="pesquisar"><input class="menu__input" type="search" name="" placeholder="O que você procura?"
+                        id="pesquisar"></label>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="pacients">
+            <h2 class="pacients__title">Pacientes</h2>
+                <!--<hr size="50"> APRENDER A COLOCAR UMA LINHA AQUI DECORATIVA-->
+                <table class="pacients__table"> 
+                    <label class="pacients__search" for="search"><input class="search" type="search" name="pacients__search" placeholder=""></label>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Peso</th>
+                            <th>Altura</th>
+                            <th>IMC</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Noelrrlkdk;fskdd</td>
+                            <td>2100</td>
+                            <td>4500</td>
+                            <td>1,49</td>
+                            <td>?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+        
+        <section class="pacients--form">
+            <form class="pacients-form">
+                <div class="form__header">
+                    <div class="form-header__title">
+                        <h1>Inserir Paciente</h1>
+                    </div>
+                </div>
+
+                <fieldset class="pacients-input-group">
+                    <div class="pacients-input-group__input">
+                        <label for="name">Nome: </label>
+                        <input type="text" name="name" placeholder="Name"  required>
+                    </div>
+                    <div class="pacients-input-group__input">
+                        <label for="age">Idade: </label>
+                        <input type="text" name="age" placeholder="0" >
+                    </div>
+                    <div class="pacients-input-group__input">
+                        <label for="weight">Peso: </label>
+                        <input  type="text" name="weight"  placeholder="0.00">
+                   </div>
+                   <div class="pacients-input-group__input">
+                        <label for="height">Altura: </label>
+                        <input type="text" name="height" placeholder="cm" >
+                   </div>
+                   <div class="pacients-input-group__input radio">
+
+                        <label>Sexo: </label>
+                        <label><input type="radio" name="sexo" value="feminino">feminino</label> 
+                        <label><input type="radio" name="sexo" value="masculino">masculino</label>
+                    </div>
+
+                    <div class="pacients-input-group__input select">
+
+                        <label>Humor Hj:</label>
+                        <select>
+                            <option selected disabled value=""> Selecionar</option>
+                            <option>Feliz</option>
+                            <option>Gordo</option>
+                        </select>
+                    </div>
+
+                    <div class="pacients-input-group__input checkbox">
+
+                        <label>Selecione alergia:</label>
+                        
+                        <input type="checkbox" id="Leite" name="leite" value="Leite">
+                        <label for="Leite">Leite</label>
+                        <input type="checkbox" id="Glutem" name="Glutem" value="Glutem">
+                        <label for="Glutem">Leite</label>    
+                    </div>
+                </fieldset>
+
+                <!--<div>
+                    <br>
+                    <label>Observações</label>
+                    <textarea name="obs" id="obs" cols="30" rows="10" placeholder="DIgite o que o paciente sente"></textarea>
+                </div>-->
+                <div class="form__footer"></div>
+                    <button class="form-pacients__button">Cadastrar</button>
+                </form>
+            </section>
+
+
+       
+       <!-- <section class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Teste Noelen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <form>
+                <label for="name"></label>
+                <input name="name" type="text" placeholder="Type your name">
+                <button class="button">Add</button>
+            </form>
+        </section>-->
+
+       
+        <script src="main.js"></script>
+    </body>
+</html>

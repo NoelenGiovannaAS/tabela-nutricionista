@@ -1,0 +1,9 @@
+mobile e tablet e pc 
+AO APLICAR DISPLAY: FLEX:
+- elementos um do lado do outro. Transforma em um flex-container.
+- elementos no interior flex-item.
+
+justify-content: space-evely ----> conforme vai modificando a janela do navegador, ele vai aplicando espaçamento igual.
+aligh-items: center ---> centraliza os elementos dentro desse container.
+flex-wrap: wrap ----> ela faz com que o elemento n`~ao tiver mais espaço ele quebre para a proxima linha. (caso ajanela do navegador fique pequena)
+column-gap ----> ele deixa um espaçamento dos lados 

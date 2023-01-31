@@ -1,0 +1,64 @@
+.menu{
+    display: flex; /*elementos um do lado do outro. Transforma em um flex-container. Elementos no interior flex-item*/
+    justify-content: space-evenly; /*conforme vai modificando a janela do navegador, ele vai aplicando espaçamento igual.*/
+    align-items: center; /*centraliza os elementos dentro desse container.*/
+    flex-wrap: wrap; /*ela faz com que o elemento não tiver mais espaço ele quebre para a proxima linha. (caso ajanela do navegador fique pequena)*/
+    column-gap: 33px; /* Lacuna vertical. ele deixa um espaçamento dos lados. Tipo margin*/
+
+}
+
+/*row-gap ---> cria lacuna horizontal entre elementos
+/*gap --> cria tanto horizontal quanto vertical
+
+Resumo:
+flex-direction: row - um do lado do outro (x)
+flex-direction: column - um abaixo do outro (y)
+
+grid-template-rows - altura da linhas (y)
+grid-template-columns - largura das colunas (x)
+
+Caso queiramos lidar com elementos que ocupam duas linhas, a grid é uma melhor opção, pois flex pode quebrar se nào for tela estatica
+
+PARA CENTRALIZAR DIV USANDO FLEX
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+rELFEXÃO:
+- Quantos itens há? 
+- Quantas linhas?
+- Quantas colunas?
+
+
+*/
+
+@media (min-width: 720px) { /*Para a partir de um dado tamanho de tela apresente certas configurações*/
+    .menu{
+        column-gap: 75px;
+    }
+}
+@media (min-width: 1440px) {
+    .menu{
+        column-gap: 105px;
+        flex-wrap: nowrap /*para não aplicar a quebra de linha quando tiver muito espaço*/
+    }
+    .menu_item:nth-child(1){ /*Aplicar para o primeiro elemento que tiver a classe.*/
+        order: 1;
+    }
+    .menu_item:nth-child(2){ 
+        order: 3;
+    }
+    .menu_item:nth-child(3){ 
+        order: 4;
+    }
+    .menu_item:nth-child(4){ 
+        order: 5;
+    }
+    .menu_item:nth-child(5){ 
+        order: 2;
+    }
+}
+
+
