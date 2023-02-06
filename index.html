@@ -17,24 +17,24 @@
             <ul class="menu">
                 <li class="menu__item">
                    <!-- <h1 class="menu__titulo"></h1>-->
-                   <img src="img/logo-branco-maior.png">
+                   <img class="menu__img" src="img/vecteezy_flower_1190269.png">
                 </li>
                 <li class="menu__item"><a href="#" class="">Programação</a></li>
                 <li class="menu__item"> <a href="#">Categorias</a></li>
                 <li class="menu__item"><a href="#">Seu local</a></li>
 
-                <li class="menu__item menu__pesquisar">
+                <!--<li class="menu__item menu__pesquisar">
                     <label class="menu__label" for="pesquisar"><input class="menu__input" type="search" name="" placeholder="O que você procura?"
                         id="pesquisar"></label>
-                </li>
+                </li>-->
             </ul>
         </nav>
 
-        <section class="pacients">
+        <section class="pacients  scrollit">
             <h2 class="pacients__title">Pacientes</h2>
                 <!--<hr size="50"> APRENDER A COLOCAR UMA LINHA AQUI DECORATIVA-->
+            <label class="pacients__search" for="search"><input class="search" type="search" name="pacients__search" placeholder=""></label>
                 <table class="pacients__table"> 
-                    <label class="pacients__search" for="search"><input class="search" type="search" name="pacients__search" placeholder=""></label>
                     <thead>
                         <tr>
                             <th>Nome</th>
@@ -44,7 +44,7 @@
                             <th>IMC</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody >
                         <tr>
                             <td>Noelrrlkdk;fskdd</td>
                             <td>2100</td>
@@ -53,6 +53,7 @@
                             <td>?</td>
                         </tr>
                     </tbody>
+                   
                 </table>
             </section>
             
@@ -75,24 +76,24 @@
                         <input type="text" name="age" placeholder="0" >
                     </div>
                     <div class="pacients-input-group__input">
-                        <label for="weight">Peso: </label>
-                        <input  type="text" name="weight"  placeholder="0.00">
+                        <label for="weight" >Peso: </label>
+                        <input  type="text" name="weight"  placeholder="0.00" step="0.010">
                    </div>
                    <div class="pacients-input-group__input">
                         <label for="height">Altura: </label>
-                        <input type="text" name="height" placeholder="cm" >
+                        <input type="number" name="height" placeholder="cm" >
                    </div>
                    <div class="pacients-input-group__input radio">
 
                         <label>Sexo: </label>
-                        <label><input type="radio" name="sexo" value="feminino">feminino</label> 
-                        <label><input type="radio" name="sexo" value="masculino">masculino</label>
+                        <label><input type="radio" name="sex" value="women">female</label> 
+                        <label><input type="radio" name="sex" value="man">male</label>
                     </div>
 
                     <div class="pacients-input-group__input select">
 
                         <label>Humor Hj:</label>
-                        <select>
+                        <select name="mood">
                             <option selected disabled value=""> Selecionar</option>
                             <option>Feliz</option>
                             <option>Gordo</option>
@@ -103,10 +104,10 @@
 
                         <label>Selecione alergia:</label>
                         
-                        <input type="checkbox" id="Leite" name="leite" value="Leite">
+                        <input type="checkbox" id="Leite" name="checkbox_allergy" value="Leite">
                         <label for="Leite">Leite</label>
-                        <input type="checkbox" id="Glutem" name="Glutem" value="Glutem">
-                        <label for="Glutem">Leite</label>    
+                        <input type="checkbox" id="Glutem" name="checkbox_allergy" value="Glutem">
+                        <label for="Glutem">Glutem</label>    
                     </div>
                 </fieldset>
 
@@ -145,6 +146,8 @@
         </section>-->
 
        
-        <script src="main.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/form.js"></script>
+
     </body>
 </html>

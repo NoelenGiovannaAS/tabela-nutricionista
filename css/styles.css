@@ -11,7 +11,26 @@ body{
 }   
 
 .menu{
+    display: flex;
     background-color: rgb(15, 14, 14);
+    flex-flow: row wrap;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    font-size: large;
+   
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu__img{
+    width: 10vh;
+    
+
 }
 
 .pacients{
@@ -81,6 +100,10 @@ td{
 
 }
 
+.scrollit {
+    overflow:scroll;
+}
+
 
 .pacients--form{
     background-color: rgb(50, 58, 87);
@@ -125,12 +148,12 @@ td{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px;
     color: white;
     border-color: black;
     border-radius: 50px;
     border: 2px solid;
     padding: 5%;
+
 }
 
 .form__footer{
@@ -141,6 +164,7 @@ td{
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    
 }
 
 .form-pacients__button{
